@@ -1,0 +1,2910 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  proxy-server-nameserver :
+  - 112.215.198.248
+  - 112.215.198.254
+  - 112.215.37.182
+  - 112.215.37.183
+  enable: true
+  ipv6: false
+  use-host: true
+  enhanced-mode: fake-ip
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+    - 112.215.198.248
+    - 112.215.198.254
+    - 112.215.37.182
+    - 112.215.37.183
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - "*.time.edu.cn"
+    - "*.ntp.org.cn"
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - msftconnecttest.com
+    - msftncsi.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - xnotify.xboxlive.com
+    - +.battlenet.com.cn
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - heartbeat.belkin.com
+    - "*.linksys.com"
+    - "*.linksyssmartwifi.com"
+    - "*.router.asus.com"
+    - mesu.apple.com
+    - swscan.apple.com
+    - swquery.apple.com
+    - swdownload.apple.com
+    - swcdn.apple.com
+    - swdist.apple.com
+    - lens.l.google.com
+    - stun.l.google.com
+    - +.nflxvideo.net
+    - "*.square-enix.com"
+    - "*.finalfantasyxiv.com"
+    - "*.ffxiv.com"
+    - "*.mcdn.bilivideo.cn"
+    - +.media.dssott.com
+proxies:
+- name: 🇮🇩-[ID]=1🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID1
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=2🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID2
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=3🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID3
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=4🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID4
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=5🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID5
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=6🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID6
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=7🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID7
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=8🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID8
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=9🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID9
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇮🇩-[ID]=10🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-ID10
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=1🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG1
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=2🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG2
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=3🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG3
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=4🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG4
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=5🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG5
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=6🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG6
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=7🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG7
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=8🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG8
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=9🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG9
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=10🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG10
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=11🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG11
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=12🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG12
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=13🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG13
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=14🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG14
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=15🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG15
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=16🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG16
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=17🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG17
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=18🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG18
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=19🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG19
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=20🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG20
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=21🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG21
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=22🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG22
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=23🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG23
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=24🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG24
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=25🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG25
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=26🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG26
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=27🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG27
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=28🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG28
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=29🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG29
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=30🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG30
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=31🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG31
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=32🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG32
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=33🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG33
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=34🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG34
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=35🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG35
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=36🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG36
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=37🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG37
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=38🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG38
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=39🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG39
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=40🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG40
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=41🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG41
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=42🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG42
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=43🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG43
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=44🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG44
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=45🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG45
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=46🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG46
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=47🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG47
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=48🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG48
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=49🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG49
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=50🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG50
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=51🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG51
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=52🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG52
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=53🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG53
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=54🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG54
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=55🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG55
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=56🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG56
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=57🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG57
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=58🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG58
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=59🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG59
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=60🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG60
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=61🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG61
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=62🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG62
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=63🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG63
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=64🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG64
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=65🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG65
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=66🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG66
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=67🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG67
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=68🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG68
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=69🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG69
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=70🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG70
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=71🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG71
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=72🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG72
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=73🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG73
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=74🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG74
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=75🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG75
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=76🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG76
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=77🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG77
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=78🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG78
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=79🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG79
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=80🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG80
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=81🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG81
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=82🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG82
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=83🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG83
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=84🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG84
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=85🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG85
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=86🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG86
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=87🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG87
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=88🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG88
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=89🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG89
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=90🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG90
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=91🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG91
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=92🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG92
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=93🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG93
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=94🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG94
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=95🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG95
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=96🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG96
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=97🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG97
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=98🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG98
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=99🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG99
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=100🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG100
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=101🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG101
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=102🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG102
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=103🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG103
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=104🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG104
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=105🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG105
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=106🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG106
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=107🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG107
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=108🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG108
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=109🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG109
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=110🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG110
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=111🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG111
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=112🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG112
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=113🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG113
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=114🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG114
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=115🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG115
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=116🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG116
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=117🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG117
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=118🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG118
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=119🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG119
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=120🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG120
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=121🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG121
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=122🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG122
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=123🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG123
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=124🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG124
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=125🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG125
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=126🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG126
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=127🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG127
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=128🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG128
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=129🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG129
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=130🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG130
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=131🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG131
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=132🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG132
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=133🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG133
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=134🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG134
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=135🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG135
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=136🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG136
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=137🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG137
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=138🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG138
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=139🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG139
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=140🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG140
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=141🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG141
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=142🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG142
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=143🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG143
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=144🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG144
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=145🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG145
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=146🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG146
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=147🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG147
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=148🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG148
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=149🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG149
+    headers:
+      Host: proxy.yudhy.net
+- name: 🇸🇬-[SG]=150🔐
+  server: quiz.int.vidio.com
+  port: 443
+  type: trojan
+  password: 47517441-8be8-413c-bda8-68651fea0199
+  udp: true
+  skip-cert-verify: true
+  network: ws
+  sni: proxy.yudhy.net
+  ws-opts:
+    path: /YudhyNet-SG150
+    headers:
+      Host: proxy.yudhy.net
+proxy-groups:
+- name: D-I-N-G-G-A
+  type: select
+  disable-udp: true
+  proxies:
+  - BEST-PING ALL
+  - BEST-PING ID
+  - FALLBACK ID
+  - LOAD-BALANCE ID
+  - BEST-PING SG
+  - FALLBACK SG
+  - LOAD-BALANCE SG
+- name: BEST-PING ID
+  type: url-test
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇮🇩-[ID]=1🔐
+  - 🇮🇩-[ID]=2🔐
+  - 🇮🇩-[ID]=3🔐
+  - 🇮🇩-[ID]=4🔐
+  - 🇮🇩-[ID]=5🔐
+  - 🇮🇩-[ID]=6🔐
+  - 🇮🇩-[ID]=7🔐
+  - 🇮🇩-[ID]=8🔐
+  - 🇮🇩-[ID]=9🔐
+  - 🇮🇩-[ID]=10🔐
+- name: FALLBACK ID
+  type: fallback
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  proxies:
+  - 🇮🇩-[ID]=1🔐
+  - 🇮🇩-[ID]=2🔐
+  - 🇮🇩-[ID]=3🔐
+  - 🇮🇩-[ID]=4🔐
+  - 🇮🇩-[ID]=5🔐
+  - 🇮🇩-[ID]=6🔐
+  - 🇮🇩-[ID]=7🔐
+  - 🇮🇩-[ID]=8🔐
+  - 🇮🇩-[ID]=9🔐
+  - 🇮🇩-[ID]=10🔐
+- name: LOAD-BALANCE ID
+  type: load-balance
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  proxies:
+  - 🇮🇩-[ID]=1🔐
+  - 🇮🇩-[ID]=2🔐
+  - 🇮🇩-[ID]=3🔐
+  - 🇮🇩-[ID]=4🔐
+  - 🇮🇩-[ID]=5🔐
+  - 🇮🇩-[ID]=6🔐
+  - 🇮🇩-[ID]=7🔐
+  - 🇮🇩-[ID]=8🔐
+  - 🇮🇩-[ID]=9🔐
+  - 🇮🇩-[ID]=10🔐
+- name: BEST-PING SG
+  type: url-test
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇸🇬-[SG]=1🔐
+  - 🇸🇬-[SG]=2🔐
+  - 🇸🇬-[SG]=3🔐
+  - 🇸🇬-[SG]=4🔐
+  - 🇸🇬-[SG]=5🔐
+  - 🇸🇬-[SG]=6🔐
+  - 🇸🇬-[SG]=7🔐
+  - 🇸🇬-[SG]=8🔐
+  - 🇸🇬-[SG]=9🔐
+  - 🇸🇬-[SG]=10🔐
+  - 🇸🇬-[SG]=11🔐
+  - 🇸🇬-[SG]=12🔐
+  - 🇸🇬-[SG]=13🔐
+  - 🇸🇬-[SG]=14🔐
+  - 🇸🇬-[SG]=15🔐
+  - 🇸🇬-[SG]=16🔐
+  - 🇸🇬-[SG]=17🔐
+  - 🇸🇬-[SG]=18🔐
+  - 🇸🇬-[SG]=19🔐
+  - 🇸🇬-[SG]=20🔐
+  - 🇸🇬-[SG]=21🔐
+  - 🇸🇬-[SG]=22🔐
+  - 🇸🇬-[SG]=23🔐
+  - 🇸🇬-[SG]=24🔐
+  - 🇸🇬-[SG]=25🔐
+  - 🇸🇬-[SG]=26🔐
+  - 🇸🇬-[SG]=27🔐
+  - 🇸🇬-[SG]=28🔐
+  - 🇸🇬-[SG]=29🔐
+  - 🇸🇬-[SG]=30🔐
+  - 🇸🇬-[SG]=31🔐
+  - 🇸🇬-[SG]=32🔐
+  - 🇸🇬-[SG]=33🔐
+  - 🇸🇬-[SG]=34🔐
+  - 🇸🇬-[SG]=35🔐
+  - 🇸🇬-[SG]=36🔐
+  - 🇸🇬-[SG]=37🔐
+  - 🇸🇬-[SG]=38🔐
+  - 🇸🇬-[SG]=39🔐
+  - 🇸🇬-[SG]=40🔐
+  - 🇸🇬-[SG]=41🔐
+  - 🇸🇬-[SG]=42🔐
+  - 🇸🇬-[SG]=43🔐
+  - 🇸🇬-[SG]=44🔐
+  - 🇸🇬-[SG]=45🔐
+  - 🇸🇬-[SG]=46🔐
+  - 🇸🇬-[SG]=47🔐
+  - 🇸🇬-[SG]=48🔐
+  - 🇸🇬-[SG]=49🔐
+  - 🇸🇬-[SG]=50🔐
+  - 🇸🇬-[SG]=51🔐
+  - 🇸🇬-[SG]=52🔐
+  - 🇸🇬-[SG]=53🔐
+  - 🇸🇬-[SG]=54🔐
+  - 🇸🇬-[SG]=55🔐
+  - 🇸🇬-[SG]=56🔐
+  - 🇸🇬-[SG]=57🔐
+  - 🇸🇬-[SG]=58🔐
+  - 🇸🇬-[SG]=59🔐
+  - 🇸🇬-[SG]=60🔐
+  - 🇸🇬-[SG]=61🔐
+  - 🇸🇬-[SG]=62🔐
+  - 🇸🇬-[SG]=63🔐
+  - 🇸🇬-[SG]=64🔐
+  - 🇸🇬-[SG]=65🔐
+  - 🇸🇬-[SG]=66🔐
+  - 🇸🇬-[SG]=67🔐
+  - 🇸🇬-[SG]=68🔐
+  - 🇸🇬-[SG]=69🔐
+  - 🇸🇬-[SG]=70🔐
+  - 🇸🇬-[SG]=71🔐
+  - 🇸🇬-[SG]=72🔐
+  - 🇸🇬-[SG]=73🔐
+  - 🇸🇬-[SG]=74🔐
+  - 🇸🇬-[SG]=75🔐
+  - 🇸🇬-[SG]=76🔐
+  - 🇸🇬-[SG]=77🔐
+  - 🇸🇬-[SG]=78🔐
+  - 🇸🇬-[SG]=79🔐
+  - 🇸🇬-[SG]=80🔐
+  - 🇸🇬-[SG]=81🔐
+  - 🇸🇬-[SG]=82🔐
+  - 🇸🇬-[SG]=83🔐
+  - 🇸🇬-[SG]=84🔐
+  - 🇸🇬-[SG]=85🔐
+  - 🇸🇬-[SG]=86🔐
+  - 🇸🇬-[SG]=87🔐
+  - 🇸🇬-[SG]=88🔐
+  - 🇸🇬-[SG]=89🔐
+  - 🇸🇬-[SG]=90🔐
+  - 🇸🇬-[SG]=91🔐
+  - 🇸🇬-[SG]=92🔐
+  - 🇸🇬-[SG]=93🔐
+  - 🇸🇬-[SG]=94🔐
+  - 🇸🇬-[SG]=95🔐
+  - 🇸🇬-[SG]=96🔐
+  - 🇸🇬-[SG]=97🔐
+  - 🇸🇬-[SG]=98🔐
+  - 🇸🇬-[SG]=99🔐
+  - 🇸🇬-[SG]=100🔐
+  - 🇸🇬-[SG]=101🔐
+  - 🇸🇬-[SG]=102🔐
+  - 🇸🇬-[SG]=103🔐
+  - 🇸🇬-[SG]=104🔐
+  - 🇸🇬-[SG]=105🔐
+  - 🇸🇬-[SG]=106🔐
+  - 🇸🇬-[SG]=107🔐
+  - 🇸🇬-[SG]=108🔐
+  - 🇸🇬-[SG]=109🔐
+  - 🇸🇬-[SG]=110🔐
+  - 🇸🇬-[SG]=111🔐
+  - 🇸🇬-[SG]=112🔐
+  - 🇸🇬-[SG]=113🔐
+  - 🇸🇬-[SG]=114🔐
+  - 🇸🇬-[SG]=115🔐
+  - 🇸🇬-[SG]=116🔐
+  - 🇸🇬-[SG]=117🔐
+  - 🇸🇬-[SG]=118🔐
+  - 🇸🇬-[SG]=119🔐
+  - 🇸🇬-[SG]=120🔐
+  - 🇸🇬-[SG]=121🔐
+  - 🇸🇬-[SG]=122🔐
+  - 🇸🇬-[SG]=123🔐
+  - 🇸🇬-[SG]=124🔐
+  - 🇸🇬-[SG]=125🔐
+  - 🇸🇬-[SG]=126🔐
+  - 🇸🇬-[SG]=127🔐
+  - 🇸🇬-[SG]=128🔐
+  - 🇸🇬-[SG]=129🔐
+  - 🇸🇬-[SG]=130🔐
+  - 🇸🇬-[SG]=131🔐
+  - 🇸🇬-[SG]=132🔐
+  - 🇸🇬-[SG]=133🔐
+  - 🇸🇬-[SG]=134🔐
+  - 🇸🇬-[SG]=135🔐
+  - 🇸🇬-[SG]=136🔐
+  - 🇸🇬-[SG]=137🔐
+  - 🇸🇬-[SG]=138🔐
+  - 🇸🇬-[SG]=139🔐
+  - 🇸🇬-[SG]=140🔐
+  - 🇸🇬-[SG]=141🔐
+  - 🇸🇬-[SG]=142🔐
+  - 🇸🇬-[SG]=143🔐
+  - 🇸🇬-[SG]=144🔐
+  - 🇸🇬-[SG]=145🔐
+  - 🇸🇬-[SG]=146🔐
+  - 🇸🇬-[SG]=147🔐
+  - 🇸🇬-[SG]=148🔐
+  - 🇸🇬-[SG]=149🔐
+  - 🇸🇬-[SG]=150🔐
+- name: FALLBACK SG
+  type: fallback
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  proxies:
+  - 🇸🇬-[SG]=1🔐
+  - 🇸🇬-[SG]=2🔐
+  - 🇸🇬-[SG]=3🔐
+  - 🇸🇬-[SG]=4🔐
+  - 🇸🇬-[SG]=5🔐
+  - 🇸🇬-[SG]=6🔐
+  - 🇸🇬-[SG]=7🔐
+  - 🇸🇬-[SG]=8🔐
+  - 🇸🇬-[SG]=9🔐
+  - 🇸🇬-[SG]=10🔐
+  - 🇸🇬-[SG]=11🔐
+  - 🇸🇬-[SG]=12🔐
+  - 🇸🇬-[SG]=13🔐
+  - 🇸🇬-[SG]=14🔐
+  - 🇸🇬-[SG]=15🔐
+  - 🇸🇬-[SG]=16🔐
+  - 🇸🇬-[SG]=17🔐
+  - 🇸🇬-[SG]=18🔐
+  - 🇸🇬-[SG]=19🔐
+  - 🇸🇬-[SG]=20🔐
+  - 🇸🇬-[SG]=21🔐
+  - 🇸🇬-[SG]=22🔐
+  - 🇸🇬-[SG]=23🔐
+  - 🇸🇬-[SG]=24🔐
+  - 🇸🇬-[SG]=25🔐
+  - 🇸🇬-[SG]=26🔐
+  - 🇸🇬-[SG]=27🔐
+  - 🇸🇬-[SG]=28🔐
+  - 🇸🇬-[SG]=29🔐
+  - 🇸🇬-[SG]=30🔐
+  - 🇸🇬-[SG]=31🔐
+  - 🇸🇬-[SG]=32🔐
+  - 🇸🇬-[SG]=33🔐
+  - 🇸🇬-[SG]=34🔐
+  - 🇸🇬-[SG]=35🔐
+  - 🇸🇬-[SG]=36🔐
+  - 🇸🇬-[SG]=37🔐
+  - 🇸🇬-[SG]=38🔐
+  - 🇸🇬-[SG]=39🔐
+  - 🇸🇬-[SG]=40🔐
+  - 🇸🇬-[SG]=41🔐
+  - 🇸🇬-[SG]=42🔐
+  - 🇸🇬-[SG]=43🔐
+  - 🇸🇬-[SG]=44🔐
+  - 🇸🇬-[SG]=45🔐
+  - 🇸🇬-[SG]=46🔐
+  - 🇸🇬-[SG]=47🔐
+  - 🇸🇬-[SG]=48🔐
+  - 🇸🇬-[SG]=49🔐
+  - 🇸🇬-[SG]=50🔐
+  - 🇸🇬-[SG]=51🔐
+  - 🇸🇬-[SG]=52🔐
+  - 🇸🇬-[SG]=53🔐
+  - 🇸🇬-[SG]=54🔐
+  - 🇸🇬-[SG]=55🔐
+  - 🇸🇬-[SG]=56🔐
+  - 🇸🇬-[SG]=57🔐
+  - 🇸🇬-[SG]=58🔐
+  - 🇸🇬-[SG]=59🔐
+  - 🇸🇬-[SG]=60🔐
+  - 🇸🇬-[SG]=61🔐
+  - 🇸🇬-[SG]=62🔐
+  - 🇸🇬-[SG]=63🔐
+  - 🇸🇬-[SG]=64🔐
+  - 🇸🇬-[SG]=65🔐
+  - 🇸🇬-[SG]=66🔐
+  - 🇸🇬-[SG]=67🔐
+  - 🇸🇬-[SG]=68🔐
+  - 🇸🇬-[SG]=69🔐
+  - 🇸🇬-[SG]=70🔐
+  - 🇸🇬-[SG]=71🔐
+  - 🇸🇬-[SG]=72🔐
+  - 🇸🇬-[SG]=73🔐
+  - 🇸🇬-[SG]=74🔐
+  - 🇸🇬-[SG]=75🔐
+  - 🇸🇬-[SG]=76🔐
+  - 🇸🇬-[SG]=77🔐
+  - 🇸🇬-[SG]=78🔐
+  - 🇸🇬-[SG]=79🔐
+  - 🇸🇬-[SG]=80🔐
+  - 🇸🇬-[SG]=81🔐
+  - 🇸🇬-[SG]=82🔐
+  - 🇸🇬-[SG]=83🔐
+  - 🇸🇬-[SG]=84🔐
+  - 🇸🇬-[SG]=85🔐
+  - 🇸🇬-[SG]=86🔐
+  - 🇸🇬-[SG]=87🔐
+  - 🇸🇬-[SG]=88🔐
+  - 🇸🇬-[SG]=89🔐
+  - 🇸🇬-[SG]=90🔐
+  - 🇸🇬-[SG]=91🔐
+  - 🇸🇬-[SG]=92🔐
+  - 🇸🇬-[SG]=93🔐
+  - 🇸🇬-[SG]=94🔐
+  - 🇸🇬-[SG]=95🔐
+  - 🇸🇬-[SG]=96🔐
+  - 🇸🇬-[SG]=97🔐
+  - 🇸🇬-[SG]=98🔐
+  - 🇸🇬-[SG]=99🔐
+  - 🇸🇬-[SG]=100🔐
+  - 🇸🇬-[SG]=101🔐
+  - 🇸🇬-[SG]=102🔐
+  - 🇸🇬-[SG]=103🔐
+  - 🇸🇬-[SG]=104🔐
+  - 🇸🇬-[SG]=105🔐
+  - 🇸🇬-[SG]=106🔐
+  - 🇸🇬-[SG]=107🔐
+  - 🇸🇬-[SG]=108🔐
+  - 🇸🇬-[SG]=109🔐
+  - 🇸🇬-[SG]=110🔐
+  - 🇸🇬-[SG]=111🔐
+  - 🇸🇬-[SG]=112🔐
+  - 🇸🇬-[SG]=113🔐
+  - 🇸🇬-[SG]=114🔐
+  - 🇸🇬-[SG]=115🔐
+  - 🇸🇬-[SG]=116🔐
+  - 🇸🇬-[SG]=117🔐
+  - 🇸🇬-[SG]=118🔐
+  - 🇸🇬-[SG]=119🔐
+  - 🇸🇬-[SG]=120🔐
+  - 🇸🇬-[SG]=121🔐
+  - 🇸🇬-[SG]=122🔐
+  - 🇸🇬-[SG]=123🔐
+  - 🇸🇬-[SG]=124🔐
+  - 🇸🇬-[SG]=125🔐
+  - 🇸🇬-[SG]=126🔐
+  - 🇸🇬-[SG]=127🔐
+  - 🇸🇬-[SG]=128🔐
+  - 🇸🇬-[SG]=129🔐
+  - 🇸🇬-[SG]=130🔐
+  - 🇸🇬-[SG]=131🔐
+  - 🇸🇬-[SG]=132🔐
+  - 🇸🇬-[SG]=133🔐
+  - 🇸🇬-[SG]=134🔐
+  - 🇸🇬-[SG]=135🔐
+  - 🇸🇬-[SG]=136🔐
+  - 🇸🇬-[SG]=137🔐
+  - 🇸🇬-[SG]=138🔐
+  - 🇸🇬-[SG]=139🔐
+  - 🇸🇬-[SG]=140🔐
+  - 🇸🇬-[SG]=141🔐
+  - 🇸🇬-[SG]=142🔐
+  - 🇸🇬-[SG]=143🔐
+  - 🇸🇬-[SG]=144🔐
+  - 🇸🇬-[SG]=145🔐
+  - 🇸🇬-[SG]=146🔐
+  - 🇸🇬-[SG]=147🔐
+  - 🇸🇬-[SG]=148🔐
+  - 🇸🇬-[SG]=149🔐
+  - 🇸🇬-[SG]=150🔐
+- name: LOAD-BALANCE SG
+  type: load-balance
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  proxies:
+  - 🇸🇬-[SG]=1🔐
+  - 🇸🇬-[SG]=2🔐
+  - 🇸🇬-[SG]=3🔐
+  - 🇸🇬-[SG]=4🔐
+  - 🇸🇬-[SG]=5🔐
+  - 🇸🇬-[SG]=6🔐
+  - 🇸🇬-[SG]=7🔐
+  - 🇸🇬-[SG]=8🔐
+  - 🇸🇬-[SG]=9🔐
+  - 🇸🇬-[SG]=10🔐
+  - 🇸🇬-[SG]=11🔐
+  - 🇸🇬-[SG]=12🔐
+  - 🇸🇬-[SG]=13🔐
+  - 🇸🇬-[SG]=14🔐
+  - 🇸🇬-[SG]=15🔐
+  - 🇸🇬-[SG]=16🔐
+  - 🇸🇬-[SG]=17🔐
+  - 🇸🇬-[SG]=18🔐
+  - 🇸🇬-[SG]=19🔐
+  - 🇸🇬-[SG]=20🔐
+  - 🇸🇬-[SG]=21🔐
+  - 🇸🇬-[SG]=22🔐
+  - 🇸🇬-[SG]=23🔐
+  - 🇸🇬-[SG]=24🔐
+  - 🇸🇬-[SG]=25🔐
+  - 🇸🇬-[SG]=26🔐
+  - 🇸🇬-[SG]=27🔐
+  - 🇸🇬-[SG]=28🔐
+  - 🇸🇬-[SG]=29🔐
+  - 🇸🇬-[SG]=30🔐
+  - 🇸🇬-[SG]=31🔐
+  - 🇸🇬-[SG]=32🔐
+  - 🇸🇬-[SG]=33🔐
+  - 🇸🇬-[SG]=34🔐
+  - 🇸🇬-[SG]=35🔐
+  - 🇸🇬-[SG]=36🔐
+  - 🇸🇬-[SG]=37🔐
+  - 🇸🇬-[SG]=38🔐
+  - 🇸🇬-[SG]=39🔐
+  - 🇸🇬-[SG]=40🔐
+  - 🇸🇬-[SG]=41🔐
+  - 🇸🇬-[SG]=42🔐
+  - 🇸🇬-[SG]=43🔐
+  - 🇸🇬-[SG]=44🔐
+  - 🇸🇬-[SG]=45🔐
+  - 🇸🇬-[SG]=46🔐
+  - 🇸🇬-[SG]=47🔐
+  - 🇸🇬-[SG]=48🔐
+  - 🇸🇬-[SG]=49🔐
+  - 🇸🇬-[SG]=50🔐
+  - 🇸🇬-[SG]=51🔐
+  - 🇸🇬-[SG]=52🔐
+  - 🇸🇬-[SG]=53🔐
+  - 🇸🇬-[SG]=54🔐
+  - 🇸🇬-[SG]=55🔐
+  - 🇸🇬-[SG]=56🔐
+  - 🇸🇬-[SG]=57🔐
+  - 🇸🇬-[SG]=58🔐
+  - 🇸🇬-[SG]=59🔐
+  - 🇸🇬-[SG]=60🔐
+  - 🇸🇬-[SG]=61🔐
+  - 🇸🇬-[SG]=62🔐
+  - 🇸🇬-[SG]=63🔐
+  - 🇸🇬-[SG]=64🔐
+  - 🇸🇬-[SG]=65🔐
+  - 🇸🇬-[SG]=66🔐
+  - 🇸🇬-[SG]=67🔐
+  - 🇸🇬-[SG]=68🔐
+  - 🇸🇬-[SG]=69🔐
+  - 🇸🇬-[SG]=70🔐
+  - 🇸🇬-[SG]=71🔐
+  - 🇸🇬-[SG]=72🔐
+  - 🇸🇬-[SG]=73🔐
+  - 🇸🇬-[SG]=74🔐
+  - 🇸🇬-[SG]=75🔐
+  - 🇸🇬-[SG]=76🔐
+  - 🇸🇬-[SG]=77🔐
+  - 🇸🇬-[SG]=78🔐
+  - 🇸🇬-[SG]=79🔐
+  - 🇸🇬-[SG]=80🔐
+  - 🇸🇬-[SG]=81🔐
+  - 🇸🇬-[SG]=82🔐
+  - 🇸🇬-[SG]=83🔐
+  - 🇸🇬-[SG]=84🔐
+  - 🇸🇬-[SG]=85🔐
+  - 🇸🇬-[SG]=86🔐
+  - 🇸🇬-[SG]=87🔐
+  - 🇸🇬-[SG]=88🔐
+  - 🇸🇬-[SG]=89🔐
+  - 🇸🇬-[SG]=90🔐
+  - 🇸🇬-[SG]=91🔐
+  - 🇸🇬-[SG]=92🔐
+  - 🇸🇬-[SG]=93🔐
+  - 🇸🇬-[SG]=94🔐
+  - 🇸🇬-[SG]=95🔐
+  - 🇸🇬-[SG]=96🔐
+  - 🇸🇬-[SG]=97🔐
+  - 🇸🇬-[SG]=98🔐
+  - 🇸🇬-[SG]=99🔐
+  - 🇸🇬-[SG]=100🔐
+  - 🇸🇬-[SG]=101🔐
+  - 🇸🇬-[SG]=102🔐
+  - 🇸🇬-[SG]=103🔐
+  - 🇸🇬-[SG]=104🔐
+  - 🇸🇬-[SG]=105🔐
+  - 🇸🇬-[SG]=106🔐
+  - 🇸🇬-[SG]=107🔐
+  - 🇸🇬-[SG]=108🔐
+  - 🇸🇬-[SG]=109🔐
+  - 🇸🇬-[SG]=110🔐
+  - 🇸🇬-[SG]=111🔐
+  - 🇸🇬-[SG]=112🔐
+  - 🇸🇬-[SG]=113🔐
+  - 🇸🇬-[SG]=114🔐
+  - 🇸🇬-[SG]=115🔐
+  - 🇸🇬-[SG]=116🔐
+  - 🇸🇬-[SG]=117🔐
+  - 🇸🇬-[SG]=118🔐
+  - 🇸🇬-[SG]=119🔐
+  - 🇸🇬-[SG]=120🔐
+  - 🇸🇬-[SG]=121🔐
+  - 🇸🇬-[SG]=122🔐
+  - 🇸🇬-[SG]=123🔐
+  - 🇸🇬-[SG]=124🔐
+  - 🇸🇬-[SG]=125🔐
+  - 🇸🇬-[SG]=126🔐
+  - 🇸🇬-[SG]=127🔐
+  - 🇸🇬-[SG]=128🔐
+  - 🇸🇬-[SG]=129🔐
+  - 🇸🇬-[SG]=130🔐
+  - 🇸🇬-[SG]=131🔐
+  - 🇸🇬-[SG]=132🔐
+  - 🇸🇬-[SG]=133🔐
+  - 🇸🇬-[SG]=134🔐
+  - 🇸🇬-[SG]=135🔐
+  - 🇸🇬-[SG]=136🔐
+  - 🇸🇬-[SG]=137🔐
+  - 🇸🇬-[SG]=138🔐
+  - 🇸🇬-[SG]=139🔐
+  - 🇸🇬-[SG]=140🔐
+  - 🇸🇬-[SG]=141🔐
+  - 🇸🇬-[SG]=142🔐
+  - 🇸🇬-[SG]=143🔐
+  - 🇸🇬-[SG]=144🔐
+  - 🇸🇬-[SG]=145🔐
+  - 🇸🇬-[SG]=146🔐
+  - 🇸🇬-[SG]=147🔐
+  - 🇸🇬-[SG]=148🔐
+  - 🇸🇬-[SG]=149🔐
+  - 🇸🇬-[SG]=150🔐
+- name: BEST-PING ALL
+  type: url-test
+  url: https://detectportal.firefox.com/success.txt
+  interval: 300
+  tolerance: 50
+  proxies:
+  - 🇮🇩-[ID]=1🔐
+  - 🇮🇩-[ID]=2🔐
+  - 🇮🇩-[ID]=3🔐
+  - 🇮🇩-[ID]=4🔐
+  - 🇮🇩-[ID]=5🔐
+  - 🇮🇩-[ID]=6🔐
+  - 🇮🇩-[ID]=7🔐
+  - 🇮🇩-[ID]=8🔐
+  - 🇮🇩-[ID]=9🔐
+  - 🇮🇩-[ID]=10🔐
+  - 🇸🇬-[SG]=1🔐
+  - 🇸🇬-[SG]=2🔐
+  - 🇸🇬-[SG]=3🔐
+  - 🇸🇬-[SG]=4🔐
+  - 🇸🇬-[SG]=5🔐
+  - 🇸🇬-[SG]=6🔐
+  - 🇸🇬-[SG]=7🔐
+  - 🇸🇬-[SG]=8🔐
+  - 🇸🇬-[SG]=9🔐
+  - 🇸🇬-[SG]=10🔐
+  - 🇸🇬-[SG]=11🔐
+  - 🇸🇬-[SG]=12🔐
+  - 🇸🇬-[SG]=13🔐
+  - 🇸🇬-[SG]=14🔐
+  - 🇸🇬-[SG]=15🔐
+  - 🇸🇬-[SG]=16🔐
+  - 🇸🇬-[SG]=17🔐
+  - 🇸🇬-[SG]=18🔐
+  - 🇸🇬-[SG]=19🔐
+  - 🇸🇬-[SG]=20🔐
+  - 🇸🇬-[SG]=21🔐
+  - 🇸🇬-[SG]=22🔐
+  - 🇸🇬-[SG]=23🔐
+  - 🇸🇬-[SG]=24🔐
+  - 🇸🇬-[SG]=25🔐
+  - 🇸🇬-[SG]=26🔐
+  - 🇸🇬-[SG]=27🔐
+  - 🇸🇬-[SG]=28🔐
+  - 🇸🇬-[SG]=29🔐
+  - 🇸🇬-[SG]=30🔐
+  - 🇸🇬-[SG]=31🔐
+  - 🇸🇬-[SG]=32🔐
+  - 🇸🇬-[SG]=33🔐
+  - 🇸🇬-[SG]=34🔐
+  - 🇸🇬-[SG]=35🔐
+  - 🇸🇬-[SG]=36🔐
+  - 🇸🇬-[SG]=37🔐
+  - 🇸🇬-[SG]=38🔐
+  - 🇸🇬-[SG]=39🔐
+  - 🇸🇬-[SG]=40🔐
+  - 🇸🇬-[SG]=41🔐
+  - 🇸🇬-[SG]=42🔐
+  - 🇸🇬-[SG]=43🔐
+  - 🇸🇬-[SG]=44🔐
+  - 🇸🇬-[SG]=45🔐
+  - 🇸🇬-[SG]=46🔐
+  - 🇸🇬-[SG]=47🔐
+  - 🇸🇬-[SG]=48🔐
+  - 🇸🇬-[SG]=49🔐
+  - 🇸🇬-[SG]=50🔐
+  - 🇸🇬-[SG]=51🔐
+  - 🇸🇬-[SG]=52🔐
+  - 🇸🇬-[SG]=53🔐
+  - 🇸🇬-[SG]=54🔐
+  - 🇸🇬-[SG]=55🔐
+  - 🇸🇬-[SG]=56🔐
+  - 🇸🇬-[SG]=57🔐
+  - 🇸🇬-[SG]=58🔐
+  - 🇸🇬-[SG]=59🔐
+  - 🇸🇬-[SG]=60🔐
+  - 🇸🇬-[SG]=61🔐
+  - 🇸🇬-[SG]=62🔐
+  - 🇸🇬-[SG]=63🔐
+  - 🇸🇬-[SG]=64🔐
+  - 🇸🇬-[SG]=65🔐
+  - 🇸🇬-[SG]=66🔐
+  - 🇸🇬-[SG]=67🔐
+  - 🇸🇬-[SG]=68🔐
+  - 🇸🇬-[SG]=69🔐
+  - 🇸🇬-[SG]=70🔐
+  - 🇸🇬-[SG]=71🔐
+  - 🇸🇬-[SG]=72🔐
+  - 🇸🇬-[SG]=73🔐
+  - 🇸🇬-[SG]=74🔐
+  - 🇸🇬-[SG]=75🔐
+  - 🇸🇬-[SG]=76🔐
+  - 🇸🇬-[SG]=77🔐
+  - 🇸🇬-[SG]=78🔐
+  - 🇸🇬-[SG]=79🔐
+  - 🇸🇬-[SG]=80🔐
+  - 🇸🇬-[SG]=81🔐
+  - 🇸🇬-[SG]=82🔐
+  - 🇸🇬-[SG]=83🔐
+  - 🇸🇬-[SG]=84🔐
+  - 🇸🇬-[SG]=85🔐
+  - 🇸🇬-[SG]=86🔐
+  - 🇸🇬-[SG]=87🔐
+  - 🇸🇬-[SG]=88🔐
+  - 🇸🇬-[SG]=89🔐
+  - 🇸🇬-[SG]=90🔐
+  - 🇸🇬-[SG]=91🔐
+  - 🇸🇬-[SG]=92🔐
+  - 🇸🇬-[SG]=93🔐
+  - 🇸🇬-[SG]=94🔐
+  - 🇸🇬-[SG]=95🔐
+  - 🇸🇬-[SG]=96🔐
+  - 🇸🇬-[SG]=97🔐
+  - 🇸🇬-[SG]=98🔐
+  - 🇸🇬-[SG]=99🔐
+  - 🇸🇬-[SG]=100🔐
+  - 🇸🇬-[SG]=101🔐
+  - 🇸🇬-[SG]=102🔐
+  - 🇸🇬-[SG]=103🔐
+  - 🇸🇬-[SG]=104🔐
+  - 🇸🇬-[SG]=105🔐
+  - 🇸🇬-[SG]=106🔐
+  - 🇸🇬-[SG]=107🔐
+  - 🇸🇬-[SG]=108🔐
+  - 🇸🇬-[SG]=109🔐
+  - 🇸🇬-[SG]=110🔐
+  - 🇸🇬-[SG]=111🔐
+  - 🇸🇬-[SG]=112🔐
+  - 🇸🇬-[SG]=113🔐
+  - 🇸🇬-[SG]=114🔐
+  - 🇸🇬-[SG]=115🔐
+  - 🇸🇬-[SG]=116🔐
+  - 🇸🇬-[SG]=117🔐
+  - 🇸🇬-[SG]=118🔐
+  - 🇸🇬-[SG]=119🔐
+  - 🇸🇬-[SG]=120🔐
+  - 🇸🇬-[SG]=121🔐
+  - 🇸🇬-[SG]=122🔐
+  - 🇸🇬-[SG]=123🔐
+  - 🇸🇬-[SG]=124🔐
+  - 🇸🇬-[SG]=125🔐
+  - 🇸🇬-[SG]=126🔐
+  - 🇸🇬-[SG]=127🔐
+  - 🇸🇬-[SG]=128🔐
+  - 🇸🇬-[SG]=129🔐
+  - 🇸🇬-[SG]=130🔐
+  - 🇸🇬-[SG]=131🔐
+  - 🇸🇬-[SG]=132🔐
+  - 🇸🇬-[SG]=133🔐
+  - 🇸🇬-[SG]=134🔐
+  - 🇸🇬-[SG]=135🔐
+  - 🇸🇬-[SG]=136🔐
+  - 🇸🇬-[SG]=137🔐
+  - 🇸🇬-[SG]=138🔐
+  - 🇸🇬-[SG]=139🔐
+  - 🇸🇬-[SG]=140🔐
+  - 🇸🇬-[SG]=141🔐
+  - 🇸🇬-[SG]=142🔐
+  - 🇸🇬-[SG]=143🔐
+  - 🇸🇬-[SG]=144🔐
+  - 🇸🇬-[SG]=145🔐
+  - 🇸🇬-[SG]=146🔐
+  - 🇸🇬-[SG]=147🔐
+  - 🇸🇬-[SG]=148🔐
+  - 🇸🇬-[SG]=149🔐
+  - 🇸🇬-[SG]=150🔐
+rules:
+- MATCH,D-I-N-G-G-A
